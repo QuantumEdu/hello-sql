@@ -17,6 +17,7 @@ UNIQUE INDEX `email_history_id_UNIQUE` (`email_history_id` ASC) VISIBLE);
 -- DELIMITER es una directiva que sirve para cambiar el delimitador de instrucciones SQL, que por defecto es ;
 -- Se utiliza cuando se define un bloque de código como un procedimiento donde se requieren múltiples 
 -- instrucciones SQL terminadas con punto y coma dentro de un mismo bloque.
+-- BEFOR O AFTER,  INSERT/UPDATE/DELETE
 DELIMITER //
 CREATE TRIGGER tg_email
 AFTER UPDATE ON users
